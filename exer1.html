@@ -1,0 +1,24 @@
+<script>
+    let precoEtiqueta = Number(prompt(`Qual o preço da etiqueta do produto?`));
+    let pagamento = Number(prompt(`Informe o codigo da condição de pagamento`));
+
+    let precoFinal = 0;
+
+    switch (pagamento) {
+        case 1:
+            precoFinal = precoEtiqueta * 0.9;
+            break;
+        case 2:
+            precoFinal = precoEtiqueta * 0.95;
+            break;
+        case 3:
+            precoFinal = precoEtiqueta;
+            break;
+        case 4: //100% + 10% / 100
+            precoFinal = precoEtiqueta * 1.1;
+            break;
+        default:
+            alert(`Código inválido!`)
+    }
+    alert(`O preço final do produto é de R$${precoFinal.toFixed(2).replace(",",".")}`);
+</script>
