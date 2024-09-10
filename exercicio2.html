@@ -1,0 +1,31 @@
+<script>
+    let codigo = Number(prompt(`Qual o código do produto?`));
+
+    switch (codigo) {
+        case 1:
+            resultado = "Alimento não-perecível";
+            break;
+        case 2:
+        case 3:
+        case 4:
+            resultado = "Alimento perecível";
+            break;
+        case 5:
+        case 6:
+            resultado = "Vestuário";
+            break;
+        case 7:
+            resultado = "Higiene pessoal";
+            break;
+        case 8:
+        case 9:
+        case 10:
+            resultado = "Utensílios domésticos";
+            break;
+        default:
+            resultado = "Código inválido";
+            break;
+    }
+    alert(resultado);
+
+</script
